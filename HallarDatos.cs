@@ -13,3 +13,10 @@ public static string BuscarDireccionIP()
     }
     return DirIP.ToString();
 }
+
+public string BuscarNombreEquipo()
+{
+    string strHostName = string.Empty;
+    strHostName = Dns.GetHostName();
+    return strHostName;
+}
